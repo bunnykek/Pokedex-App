@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.pokemonapp"
+    namespace = "com.example.pokedexapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.pokemonapp"
+        applicationId = "com.example.pokedexapp"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -68,7 +68,7 @@ dependencies {
 
     implementation(libs.androidx.palette)
 
-    implementation("io.coil-kt:coil:2.6.0")
+    implementation(libs.coil)
     implementation(libs.coil.compose)
 
 

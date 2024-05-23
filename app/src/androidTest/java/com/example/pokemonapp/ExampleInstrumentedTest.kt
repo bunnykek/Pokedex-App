@@ -1,4 +1,4 @@
-package com.example.pokedexapp
+package com.example.pokemonapp
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

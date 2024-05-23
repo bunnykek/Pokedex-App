@@ -44,8 +44,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import coil.compose.AsyncImage
+import com.example.pokedexapp.R
 import com.example.pokedexapp.s2viewmodel.PokemonListViewModel
-import com.example.pokemonapp.R
 import dev.materii.pullrefresh.PullRefreshLayout
 import dev.materii.pullrefresh.rememberPullRefreshState
 
@@ -77,11 +77,11 @@ fun PokemonMenu(onNavigateToInfo: (String) -> Unit) {
                     MenuSearchBar({ titleState = 0 }, onNavigateToInfo)
                 }
 
-                var isRefreshing by remember {
+                val isRefreshing by remember {
                     mutableStateOf(false)
                 }
 
-                var pullRefreshState = rememberPullRefreshState(
+                val pullRefreshState = rememberPullRefreshState(
                     refreshing = isRefreshing,
                     onRefresh = {
                         pokemonListViewModel.fetchPokemonList((1..1000).random())
