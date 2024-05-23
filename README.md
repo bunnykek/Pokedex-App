@@ -4,7 +4,6 @@ An android pokedex app made using Kotlin and MVVM architecture.
 - Fetch random pokemon list.
 - Search by pokemon name or id.
 - Material UI made using Jetpack Compose.
-- Follows MVVM architecture pattern.
 ### Installation
 - You can import the repository in android studio and build by your own. or
 - You can use the compiled apk from the github [release](https://github.com/bunnykek/Pokedex-App/releases/) menu.
